@@ -1,0 +1,241 @@
+.cv {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+  background: linear-gradient( #80FF72,#7EE8FA);
+  /* background: linear-gradient(to right, #84ffc9, #aab2ff, #eca0ff); */
+  /* background: linear-gradient(#03001e, #7303c0, #ec38bc, #f7b4e4); */
+}
+.master{
+  height: 10px;
+  width: 100%;
+  
+}
+.container {
+  height: auto;
+  width: 60vw;
+  background-color: rgba(225, 218, 222, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 0 4rem #000000;
+  transition-duration: 1s;
+}
+.container:hover {
+  transition-duration: 1s;
+  box-shadow: 0 0 4rem azure;
+}
+
+.pic {
+  object-fit: cover;
+  object-position: top;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* .name span {
+  color: azure;
+} */
+
+hr {
+  height: 2px;
+  margin: 10px;
+  border-radius: 100px;
+}
+
+.table {
+  width: 90%;
+  text-align: center;
+}
+
+.table td {
+  color: rgb(0, 0, 0);
+  font-weight: 350;
+}
+
+.container1 {
+  margin: 2vh;
+  display: flex;
+  flex-direction: row;
+  /* background-color: #c39bcb; */
+  
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgb(49, 51, 55);
+}
+
+/* .container1:hover {
+  transition: 0.5s;
+} */
+
+.info {
+  flex-direction: column;
+}
+.domain {
+  text-indent: 5px;
+  font-size: medium;
+}
+
+/* skills progress bar*/
+.progress-bar {
+  background-color: rgb(187, 184, 184);
+  width: 250px;
+  height: 10px;
+  border-radius: 10px;
+}
+.progress-bar div {
+  height: 10px;
+  border-radius: 10px;
+  width: 0%;
+}
+
+.c {
+  background-color: #4b504e;
+  /* background-color: #4b504e; */
+  animation: c 1s linear forwards;
+}
+.html {
+  background-color: #4b504e;
+  /* background-color: #84ffc9; */
+  animation: html 1s linear forwards;
+}
+.css {
+  background-color: #4b504e;
+  /* background-color: #84ffc9; */
+  animation: css 1s linear forwards;
+}
+.python {
+  background-color: #4b504e;
+  /* background-color: #84ffc9; */
+  animation: python 1s linear forwards;
+}
+.javascript {
+  background-color: #4b504e;
+  /* background-color: #84ffc9; */
+  animation: javascript 1s linear forwards;
+}
+.react {
+  background-color: #4b504e;
+  /* background-color: #84ffc9; */
+  animation: react 1s linear forwards;
+}
+
+@keyframes c {
+  100% {
+    width: 50%;
+  }
+}
+@keyframes html {
+  100% {
+    width: 75%;
+  }
+}
+@keyframes css {
+  100% {
+    width: 65%;
+  }
+}
+@keyframes python {
+  100% {
+    width: 40%;
+  }
+}
+@keyframes javascript {
+  100% {
+    width: 45%;
+  }
+}
+@keyframes react {
+  100% {
+    width: 30%;
+  }
+}
+
+/* language progress bar*/
+
+.english {
+  background-color: #4b504e;
+  /* background-color: #84ffc9; */
+  animation: english 1s linear forwards;
+}
+.tamil {
+  background-color: #4b504e;
+  /* background-color: #84ffc9; */
+  animation: tamil 1s linear forwards;
+}
+.hindi {
+  background-color: #4b504e;
+  /* background-color: #84ffc9; */
+  animation: hindi 1s linear forwards;
+}
+.urdu {
+  background-color: #4b504e;
+  /* background-color: #84ffc9; */
+  animation: urdu 1s linear forwards;
+}
+
+@keyframes english {
+  100% {
+    width: 95%;
+  }
+}
+@keyframes tamil {
+  100% {
+    width: 50%;
+  }
+}
+@keyframes hindi {
+  100% {
+    width: 85%;
+  }
+}
+@keyframes urdu {
+  100% {
+    width: 50%;
+  }
+}
+
+.bar-info {
+  font-weight: 300;
+}
+
+.title {
+  width: 30%;
+  text-transform: uppercase;
+}
+
+.content {
+  width: 70%;
+  text-align: justify;
+}
+
+.head {
+  gap: 5rem;
+}
+
+.id {
+  font-weight: 300;
+  display: block;
+}
+
+@media screen and (max-width: 610px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+.list-item {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list-item-name {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
