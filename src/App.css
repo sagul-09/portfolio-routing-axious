@@ -12,18 +12,14 @@
 .read-the-docs {
   color: #888;
 }
-/* .navBar{
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin-bottom: 0;
-  height: 10vh;
-  align-items: center;
-} */
-/* .navBar li{
+.navBar{
+ /* background-color: antiquewhite; */
+}
+.navBar li{
    display: inline-block;
-  margin: 0 10px;
-}*/
+  margin: 0 2rem;
+
+}
 .navBar ul{
   list-style-type: none;
 } 

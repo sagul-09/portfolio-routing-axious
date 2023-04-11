@@ -1,0 +1,24 @@
+.api{
+   padding: 1rem;
+  height: auto;
+  width: 70vw;
+  background-color: rgba(225, 218, 222, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 0 4rem #000000;
+  transition-duration: 1s;
+  display: flex;
+  flex-wrap:wrap;
+  gap: 0.5rem;
+}
+.title{
+  margin: 2vh;
+  display: flex;
+  flex-direction: row;
+}
+.charBox{
+     padding: 15px;
+  height: auto;
+  width: auto;
+  background-color: rgba(225, 218, 222, 0.4);
+  border-radius: 15px;
+}
