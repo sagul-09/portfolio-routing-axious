@@ -34,7 +34,7 @@
 }
 .calculator:hover{
   box-shadow: 0 0 1.5rem white;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .display {
