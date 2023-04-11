@@ -36,23 +36,15 @@ function Cal() {
             <button className="operator" onClick={handleDelete}>
               Delete
             </button>
-            <button name="(" onClick={handleClick}>
-              (
+            <br/>
+            <button name="1" onClick={handleClick}>
+              1
             </button>
-            <button name=")" onClick={handleClick}>
-              )
+            <button name="2" onClick={handleClick}>
+              2
             </button>
-            <button name="7" onClick={handleClick}>
-              7
-            </button>
-            <button name="8" onClick={handleClick}>
-              8
-            </button>
-            <button name="9" onClick={handleClick}>
-              9
-            </button>
-            <button name="+" onClick={handleClick}>
-              +
+            <button name="3" onClick={handleClick}>
+              3
             </button>
             <button name="4" onClick={handleClick}>
               4
@@ -63,23 +55,32 @@ function Cal() {
             <button name="6" onClick={handleClick}>
               6
             </button>
-            <button name="-" onClick={handleClick}>
-              -
+            <button name="7" onClick={handleClick}>
+              7
             </button>
-            <button name="1" onClick={handleClick}>
-              1
+            <button name="8" onClick={handleClick}>
+              8
             </button>
-            <button name="2" onClick={handleClick}>
-              2
-            </button>
-            <button name="3" onClick={handleClick}>
-              3
-            </button>
-            <button name="*" onClick={handleClick}>
-              *
+            <button name="9" onClick={handleClick}>
+              9
             </button>
             <button name="0" onClick={handleClick}>
               0
+            </button>
+            <button name="(" onClick={handleClick}>
+              (
+            </button>
+            <button name=")" onClick={handleClick}>
+              )
+            </button>
+            <button name="+" onClick={handleClick}>
+              +
+            </button>
+            <button name="-" onClick={handleClick}>
+              -
+            </button>
+            <button name="*" onClick={handleClick}>
+              *
             </button>
             <button name="." onClick={handleClick}>
               .
