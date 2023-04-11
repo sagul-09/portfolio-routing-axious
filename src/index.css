@@ -71,3 +71,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 30px;
+}

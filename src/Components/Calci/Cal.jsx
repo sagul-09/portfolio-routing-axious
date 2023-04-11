@@ -49,6 +49,7 @@ function Cal() {
         <div className="master">
           <div className="calculator">
             <div className="display">{result}</div>
+            <div className="button-box">
             <div className="buttons">
               <button className="operator" onClick={handleClear}>
                 Clear
@@ -61,20 +62,22 @@ function Cal() {
               <div className="keyboard">
                 {Keyboard.map((key) => {
                   if (key === "=")
-                    return (
-                      <button onClick={handleEqual} key={key} name={key}>
+                  return (
+                    <button onClick={handleEqual} key={key} name={key}>
                         {key}
                       </button>
                     );
-                  else
+                    else
                     return (
                       <button onClick={handleClick} key={key} name={key}>
                         {key}
                       </button>
                     );
-                })}
+                
+                  })}
               </div>
-            </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>

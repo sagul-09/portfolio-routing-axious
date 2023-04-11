@@ -9,7 +9,7 @@ function App() {
       <div className="navBar">
         <ul>
           <li>
-            <Link to="/Port">About</Link>
+            <Link to="/">About</Link>
           </li>
           <li>
             <Link to="/Calci">Calculator</Link>
@@ -19,8 +19,9 @@ function App() {
           </li>
         </ul>
 
+        {/* <Port /> */}
         <Routes>
-          <Route exact path="/Port" element={<Port />}></Route>
+          <Route exact path="/" element={<Port />}></Route>
           <Route exact path="/Calci" element={<Cal />}></Route>
           <Route exact path="/Rick" element={<Api />}></Route>
         </Routes>
