@@ -1,5 +1,5 @@
-.api{
-   padding: 1rem;
+.api {
+  padding: 1rem;
   height: auto;
   width: 70vw;
   background-color: rgba(225, 218, 222, 0.4);
@@ -7,18 +7,51 @@
   box-shadow: 0 0 4rem #000000;
   transition-duration: 1s;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 0.5rem;
+  flex-direction: column;
 }
-.title{
-  margin: 2vh;
+.api:hover{
+  box-shadow: 0 0  1.5rem white;
+  transition: 0.5s;
+}
+
+.char-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  overflow-y: scroll;
+  height: 60vh;
 }
-.charBox{
-     padding: 15px;
+
+.title {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.charBox {
+  padding: 15px;
   height: auto;
   width: auto;
   background-color: rgba(225, 218, 222, 0.4);
   border-radius: 15px;
 }
+.char-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.char-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.char-container::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 30px;
+}
+/* body {
+  background-color: black;
+  margin: 0 !important;
+} */

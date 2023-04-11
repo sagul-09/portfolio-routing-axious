@@ -22,17 +22,19 @@ function App() {
       <div className="title">
         <h1>Rick and Morty</h1>
       </div>
-      {Data?.map((character) => (
-        <div key={character.id}>
-          <div className="charBox">
-            <img src={character.image} alt="" />
-            <p>Name: {character.name}</p>
-            <p>Gender: {character.gender}</p>
-            <p>Status: {character.status}</p>
-            <p>Species: {character.species}</p>
+      <div className="char-container">
+        {Data?.map((character) => (
+          <div key={character.id}>
+            <div className="charBox">
+              <img src={character.image} alt="" />
+              <p>Name: {character.name}</p>
+              <p>Gender: {character.gender}</p>
+              <p>Status: {character.status}</p>
+              <p>Species: {character.species}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

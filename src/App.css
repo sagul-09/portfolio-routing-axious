@@ -18,7 +18,11 @@
 .navBar li{
    display: inline-block;
   margin: 0 2rem;
-
+}
+.navBar li :hover{
+  color: aliceblue;
+  transition: 0.5s;
+  text-shadow: 0 0 1rem white;
 }
 .navBar ul{
   list-style-type: none;
