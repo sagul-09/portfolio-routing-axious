@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import * as math from "mathjs";
 import "./cal.css";
@@ -24,73 +23,58 @@ function Cal() {
       setResult("Error");
     }
   };
+
+  const Keyboard = [
+    "7",
+    "8",
+    "9",
+    "+",
+    "4",
+    "5",
+    "6",
+    "-",
+    "1",
+    "2",
+    "3",
+    "*",
+    ".",
+    "0",
+    "=",
+    "/",
+  ];
+
   return (
     <div>
-      <div className="App">
-        <div className="calculator">
-          <div className="display">{result}</div>
-          <div className="buttons">
-            <button className="operator" onClick={handleClear}>
-              Clear
-            </button>
-            <button className="operator" onClick={handleDelete}>
-              Delete
-            </button>
-            <br/>
-            <button name="1" onClick={handleClick}>
-              1
-            </button>
-            <button name="2" onClick={handleClick}>
-              2
-            </button>
-            <button name="3" onClick={handleClick}>
-              3
-            </button>
-            <button name="4" onClick={handleClick}>
-              4
-            </button>
-            <button name="5" onClick={handleClick}>
-              5
-            </button>
-            <button name="6" onClick={handleClick}>
-              6
-            </button>
-            <button name="7" onClick={handleClick}>
-              7
-            </button>
-            <button name="8" onClick={handleClick}>
-              8
-            </button>
-            <button name="9" onClick={handleClick}>
-              9
-            </button>
-            <button name="0" onClick={handleClick}>
-              0
-            </button>
-            <button name="(" onClick={handleClick}>
-              (
-            </button>
-            <button name=")" onClick={handleClick}>
-              )
-            </button>
-            <button name="+" onClick={handleClick}>
-              +
-            </button>
-            <button name="-" onClick={handleClick}>
-              -
-            </button>
-            <button name="*" onClick={handleClick}>
-              *
-            </button>
-            <button name="." onClick={handleClick}>
-              .
-            </button>
-            <button name="/" onClick={handleClick}>
-              /
-            </button>
-            <button className="operator" onClick={handleEqual}>
-              =
-            </button>
+      <div className="cal">
+        <div className="master">
+          <div className="calculator">
+            <div className="display">{result}</div>
+            <div className="buttons">
+              <button className="operator" onClick={handleClear}>
+                Clear
+              </button>
+              <button className="operator" onClick={handleDelete}>
+                Delete
+              </button>
+              <br />
+
+              <div className="keyboard">
+                {Keyboard.map((key) => {
+                  if (key === "=")
+                    return (
+                      <button onClick={handleEqual} key={key} name={key}>
+                        {key}
+                      </button>
+                    );
+                  else
+                    return (
+                      <button onClick={handleClick} key={key} name={key}>
+                        {key}
+                      </button>
+                    );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>

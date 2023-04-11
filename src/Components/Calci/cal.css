@@ -1,20 +1,43 @@
-.App {
+.cal {
   display: flex;
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
+}
+.master {
+  /* padding: 1rem;
+  height: auto;
+  width: auto;
+  background-color: rgba(225, 218, 222, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 0 4rem #000000;
+  transition-duration: 1s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center; */
 }
 
 .calculator {
   border: 2px solid #ccc;
   border-radius: 8px;
   width: 300px;
-  padding: 10px;
-  
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 .display {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
   margin: 1rem;
+  height: 15px;
+ display: flex;
+ align-items: center;
+}
+button {
+  margin: 0.5rem;
 }

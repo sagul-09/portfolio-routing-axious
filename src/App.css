@@ -12,9 +12,7 @@
 .read-the-docs {
   color: #888;
 }
-.navBar{
- /* background-color: antiquewhite; */
-}
+
 .navBar li{
    display: inline-block;
   margin: 0 2rem;
@@ -27,3 +25,9 @@
 .navBar ul{
   list-style-type: none;
 } 
+.welcome{
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
